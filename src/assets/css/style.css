@@ -1,0 +1,99 @@
+.header .sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header{
+    height: 6rem;
+    z-index: 10;
+}
+.header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.brand .logo{
+    height: 1.5rem;
+}
+.nav a{
+    font-size: .9rem;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    margin-top: 4px;
+    margin-right: 3rem;
+    padding-bottom: 4px;
+    border-bottom: 1px solid;
+    border-color: transparent;
+    transition: border .15s;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+/* contact */
+.contact-header {
+    padding: 2rem 0 4rem;
+}
+.contact-title {
+    font-size: 4rem;
+    margin: 0 0 4rem;
+    padding: 0;
+}
+.sender-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+.sender-info > div{
+    flex: 1;
+    margin-right: 4rem;
+}
+.label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+input, textarea{
+    background: transparent;
+    border: 1px solid #f3f3f3;
+    outline: none;
+    border-radius: .3rem;
+    padding: .8rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+}
+.message{
+    background: transparent;
+    /* border: 1px solid #f3f3f3; */
+    outline: none;
+    border-radius: .3rem;
+    padding: .8rem 1rem;
+    color: inherit;
+    font-size: 1rem;
+    width: 100%;
+}
+button {
+    color: #fff;
+    background: #000;
+    outline: none;
+    border: 0;
+    font-size: .8rem;
+    padding: .8rem 1.6rem;
+    border-radius: .3rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: opacity .25s ease;
+    font-size: 500;
+    letter-spacing: .035em;
+}
+button:hover{
+    opacity: .6;
+}
+footer {
+    font-size: .8rem;
+    padding: 6rem 0;
+}
