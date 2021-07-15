@@ -6,9 +6,9 @@ const service = axios.create({
     // 如果请求话费了超过 `timeout` 的时间，请求将被中断
     timeout: 5000,
     // 表示跨域请求时是否需要使用凭证
-    //withCredentials: true,
+    withCredentials: true,
     // proxy: {
-    //     host: '0.0.0.0',
+    //     host: '117.50.84.241',
     //     port: 1337,
     //     auth: {
     //       username: 'mikeymike',
