@@ -17,7 +17,7 @@ module.exports = {
         // Possibility to login with a Strapi user,
         // when content types are not publicly available (optional).
         loginData: {
-          identifier: '1096159835@qq.com',
+          identifier: 'Huaxy',
           password: 'Hxy19941203'
         }
       }
