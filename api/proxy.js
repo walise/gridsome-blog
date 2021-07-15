@@ -5,10 +5,12 @@ module.exports = (req, res) => {
   let target = ''
   
   // 处理代理目标地址
-  if (req.url.includes('/api/front')) {
-    target = 'http://edufront.lagou.com/'
-  } else if (req.url.startsWith('/api/boss')) {
-    target = 'http://eduboss.lagou.com/'
+  if (req.url.includes('/api')) {
+    target = 'http://117.50.84.241:1337/'
+  } else if (req.url.startsWith('/api/photos')) {
+    target = 'http://117.50.84.241:1337/'
+  }else if (req.url.startsWith('/api/articless')) {
+    target = 'http://117.50.84.241:1337/'
   }
   
   // 创建代理对象并转发请求
