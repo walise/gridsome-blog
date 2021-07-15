@@ -6,7 +6,7 @@
        <div class="contact-header">
            <h1 class="contact-title">Say hi!</h1>
        </div>
-       <form class="contact-form" name="contact" ref="form" action="actionMessage" method="post">
+       <form class="contact-form" name="contact" ref="form" :action="actionMessage" method="post">
            <div class="sender-info">
                <div>
                    <label for="name" class="label">Your name</label>
