@@ -1,12 +1,8 @@
 {
-    "routes": [
+    "rewrites": [
       {
-        "src": "/api/boss/(.*)",
-        "dest": "/api/proxy"
-      },
-      {
-        "src": "/api/front/(.*)",
-        "dest": "/api/proxy"
+        "source": "/uploads/(.*)",
+        "destination": "/api/proxy"
       }
     ]
   }
