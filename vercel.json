@@ -3,6 +3,14 @@
       {
         "source": "/uploads/(.*)",
         "destination": "/api/proxy"
+      },
+      { 
+        "source": "/photos",
+        "destination": "/api/proxy"
+      },
+      {
+        "source": "/articles",
+        "destination": "/api/proxy"
       }
     ]
   }
