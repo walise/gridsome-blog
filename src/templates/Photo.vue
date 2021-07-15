@@ -32,9 +32,6 @@ export default {
         title: '照片详情'
     },
     name: 'postsPage',
-    computed: {
-       
-    },
    methods: {
     //    将markdown 转换成 html
        getHtml (markdownStr) {

@@ -20,12 +20,13 @@ export default function (Vue, { router, head, isClient },md) {
     // Do stuff before next page load
     // 判断用户是否登录
     // 如果已经登录 将不再跳转至 登录页面
-    if(localStorage.getItem('user')&&to.name === 'login'){
-      next(false)
-    }
-    else{
-      next()
-    }
+    // const isLogin= localStorage.getItem('user') ? true:false;
+    // if(isLogin&&to.name === 'login'){
+    //   next(false)
+    // }
+    // else{
+    //   next()
+    // }
   })
   Vue.component('Layout', DefaultLayout)
 }

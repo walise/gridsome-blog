@@ -34,7 +34,7 @@ module.exports = {
     StrapiPhotos: [
       {
         path: '/photo/:id',
-        component: './src/templates/PhotoDetail.vue'
+        component: './src/templates/Photo.vue'
       }
     ]
   }
