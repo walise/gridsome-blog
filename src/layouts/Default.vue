@@ -46,7 +46,7 @@ export default {
     },
     created () {
         // 获取登录用户信息
-        this.user = localStorage.getItem('user')?JSON.parse(localStorage.getItem('user')):null
+        this.user = window.localStorage.getItem('user')?JSON.parse(localStorage.getItem('user')):null
     },
     methods: {
         logout () {

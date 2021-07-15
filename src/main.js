@@ -11,7 +11,7 @@ export default function (Vue, { router, head, isClient },md) {
   Vue.mixin({
     data :function(){
       return {
-        GRIDSOME_API_URL : process.env.GRIDSOME_API_URL
+        GRIDSOME_API_URL: process.env.GRIDSOME_API_URL
       }
     }
   })
@@ -20,13 +20,13 @@ export default function (Vue, { router, head, isClient },md) {
     // Do stuff before next page load
     // 判断用户是否登录
     // 如果已经登录 将不再跳转至 登录页面
-    // const isLogin= localStorage.getItem('user') ? true:false;
-    // if(isLogin&&to.name === 'login'){
-    //   next(false)
-    // }
-    // else{
-    //   next()
-    // }
+    const isLogin= window.localStorage.getItem('user') ? true:false;
+    if(isLogin&&to.name === 'login'){
+      next(false)
+    }
+    else{
+      next()
+    }
   })
   Vue.component('Layout', DefaultLayout)
 }
