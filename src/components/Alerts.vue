@@ -87,11 +87,17 @@ export default {
        justify-content: center;
        align-items: center;
        position: fixed;
-       margin: 50px auto 0;
+       max-width: 150px;
+       white-space: nowrap;
+       left: calc(50% - 50px);
     }
     .btn-close{
         background: none;
         margin: 0;
+        color: #333;
+    }
+    .alert{
+        padding-left: 20px;
     }
     .alert-primary {
         color: #084298;

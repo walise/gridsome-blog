@@ -9,7 +9,7 @@
         <div class="projects">
             <div class="project" v-for="photo in $page.photos.edges" :key="photo.node.id">
                 <g-link class="project-link" :to="{path:'/photo/'+photo.node.id}">
-                <g-image :src="photo.node.image.url" alt="" class="thumbnail"></g-image>
+                <g-image :src="photo.node.image.url" alt="" class="thumbnail" :onerror="ERROR_IMAGE"></g-image>
                     <h3 class="project-title">{{photo.node.title}}</h3>
                     <div data-v-50cbff3e="" class="categories">
                         <span  class="category">photography</span>
@@ -48,7 +48,7 @@ export default {
   methods: {
     renderHtml (str) {
         return md.render(str)
-    }
+    },
   }
   // inject: ['reload']
 }

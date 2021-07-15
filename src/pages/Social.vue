@@ -10,16 +10,16 @@
            <div class="sender-info">
                <div>
                    <label for="name" class="label">Your name</label>
-                   <input type="text" name="name" v-model="form.username">
+                   <input type="text" name="name" v-model="form.username" required>
                </div>
                 <div>
                    <label for="email" class="label">Your email</label>
-                   <input type="email" name="email" v-model="form.email">
+                   <input type="email" name="email" v-model="form.email" formenctype="email">
                </div>
            </div>
            <div class="message">
                <label for="message">Message</label>
-               <textarea name="message" cols="30" rows="10" v-model="form.message"></textarea>
+               <textarea name="message" cols="30" rows="10" v-model="form.desc" required></textarea>
            </div>
            <button class="submit" @click.prevent="putMessage"> submit form</button>
        </form>
@@ -40,7 +40,7 @@ export default {
           form: {
               username: '',
               email: '',
-              message: ''
+              desc: ''
           },
           alertMess: '',
           alertType: ''
@@ -69,8 +69,13 @@ export default {
                 that.alertMess = '添加成功'
                 that.alertType = 'success'
                 that.$refs.alert.showDisplay()
-                this.$refs.form.reset()
+                that.$refs.form.reset()
             }
+        }).catch(error => {
+                that.alertMess = '添加失败'
+                that.alertType = 'danger'
+                that.$refs.alert.showDisplay()
+                that.$refs.form.reset()
         })
     }
   }

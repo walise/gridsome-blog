@@ -2,7 +2,7 @@
 import axios from 'axios'
 // post 请求前 改变请求的数据格式
 const service = axios.create({
-    baseURL: '/api',
+    baseURL: process.env.GRIDSOME_API_URL,
     // 如果请求话费了超过 `timeout` 的时间，请求将被中断
     timeout: 5000,
     // 表示跨域请求时是否需要使用凭证

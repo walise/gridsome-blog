@@ -11,7 +11,8 @@ export default function (Vue, { router, head, isClient },md) {
   Vue.mixin({
     data :function(){
       return {
-        GRIDSOME_API_URL: process.env.GRIDSOME_API_URL
+        GRIDSOME_API_URL: process.env.GRIDSOME_API_URL,
+        ERROR_IMAGE: 'this.src="' + require('../static/img/error.jpeg')+ '"'
       }
     }
   })
