@@ -1,7 +1,6 @@
 <template>
   <Layout>
     <!-- Main Content-->
-    <!-- author-inform -->
         <div class="hero"> 
             <h1 class="hero-title">{{$page.hero.edges[0].node.tile}}</h1>
             <h2 class="hero-subtitle">{{$page.hero.edges[0].node.sub_title}}</h2>
