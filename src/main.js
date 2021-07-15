@@ -4,7 +4,7 @@ import './assets/css/style.css'
 import DefaultLayout from '~/layouts/Default.vue'
 export default function (Vue, { router, head, isClient },md) {
   // Set default layout as a global component
-  head.titleTemplate = '%s - Yay!',
+  head.titleTemplate = '%s - BLog!',
   // router.prototype.push = function push(location) {
   //   return router.prototype.push.call(this, location).catch(err => err)
   // }
