@@ -9,7 +9,7 @@
         <div class="projects">
             <div class="project" v-for="photo in $page.photos.edges" :key="photo.node.id">
                 <g-link class="project-link" :to="{path:'/photo/'+photo.node.id}">
-                <g-image :src="GRIDSOME_API_URL+photo.node.image.url" alt="" class="thumbnail"></g-image>
+                <g-image :src="photo.node.image.url" alt="" class="thumbnail"></g-image>
                     <h3 class="project-title">{{photo.node.title}}</h3>
                     <div data-v-50cbff3e="" class="categories">
                         <span  class="category">photography</span>

@@ -8,9 +8,10 @@
   },
   "dependencies": {
     "@gridsome/source-strapi": "^0.2.0",
+    "axios": "^0.21.1",
     "gridsome": "^0.7.0",
+    "http-proxy-middleware": "^2.0.1",
     "markdown-it": "^12.1.0",
-    "wangeditor": "^4.7.5",
-	  "axios": "^0.21.1"
+    "wangeditor": "^4.7.5"
   }
 }

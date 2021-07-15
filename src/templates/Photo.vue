@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div class="journal-content" v-html="$page.photo.desc"></div>
-            <img :src="GRIDSOME_API_URL+$page.photo.image.url" alt="">
+            <img :src="$page.photo.image.url" alt="">
         </div>
     </article>
   </Layout>
