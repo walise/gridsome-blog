@@ -11,7 +11,7 @@ module.exports = (req, res) => {
     target = 'http://117.50.84.241:1337'
   }else if (req.url.includes('/uploads')) {
     target = 'http://117.50.84.241:1337'
-  }else if (req.url.startsWith('/message')) {
+  }else if (req.url.startsWith('/messages')) {
     target = 'http://117.50.84.241:1337'
   }
   
