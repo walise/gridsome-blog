@@ -44,7 +44,7 @@ export default {
     computed: {
         
     },
-    created () {
+    mounted () {
         // 获取登录用户信息
         this.user = window.localStorage.getItem('user')?JSON.parse(localStorage.getItem('user')):null
     },
