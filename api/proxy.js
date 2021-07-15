@@ -5,11 +5,11 @@ module.exports = (req, res) => {
   let target = ''
   
   // 处理代理目标地址
-  if (req.url.includes('/api')) {
+   if (req.url.startsWith('/photos')) {
     target = 'http://117.50.84.241:1337'
-  } else if (req.url.startsWith('/api/photos')) {
+  }else if (req.url.startsWith('/articless')) {
     target = 'http://117.50.84.241:1337'
-  }else if (req.url.startsWith('/api/articless')) {
+  }else if (req.url.includes('/uploads')) {
     target = 'http://117.50.84.241:1337'
   }
   
