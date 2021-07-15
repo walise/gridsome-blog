@@ -62,7 +62,7 @@ export default {
         const that = this;
         axios({
             method: 'POST',
-            url: process.env.GRIDSOME_API_URL+'/messages',
+            url: '/messages',
             data: that.form
         }).then((res) => {
             if(res){

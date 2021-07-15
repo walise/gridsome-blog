@@ -9,7 +9,7 @@ module.exports = (req, res) => {
     target = 'http://117.50.84.241:1337'
   } else if (req.url.startsWith('/photos')) {
     target = 'http://117.50.84.241:1337'
-  }else if (req.url.startsWith('/articless')) {
+  }else if (req.url.startsWith('/articles')) {
     target = 'http://117.50.84.241:1337'
   }else if (req.url.includes('/uploads')) {
     target = 'http://117.50.84.241:1337'
