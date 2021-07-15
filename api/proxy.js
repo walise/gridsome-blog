@@ -11,6 +11,8 @@ module.exports = (req, res) => {
     target = 'http://117.50.84.241:1337'
   }else if (req.url.includes('/uploads')) {
     target = 'http://117.50.84.241:1337'
+  }else if (req.url.startsWith('/message')) {
+    target = 'http://117.50.84.241:1337'
   }
   
   // 创建代理对象并转发请求
