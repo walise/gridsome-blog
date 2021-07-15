@@ -6,7 +6,7 @@
        <div class="contact-header">
            <h1 class="contact-title">Say hi!</h1>
        </div>
-       <form class="contact-form" name="contact" ref="form">
+       <form class="contact-form" name="contact" ref="form" action="actionMessage" method="post">
            <div class="sender-info">
                <div>
                    <label for="name" class="label">Your name</label>
@@ -21,7 +21,8 @@
                <label for="message">Message</label>
                <textarea name="message" cols="30" rows="10" v-model="form.desc" required></textarea>
            </div>
-           <button class="submit" @click.prevent="putMessage"> submit form</button>
+           <!--  @click.prevent="putMessage" -->
+           <button class="submit"> submit form</button>
        </form>
    </div>
   </Layout>
@@ -78,6 +79,9 @@ export default {
                 that.$refs.form.reset()
         })
     }
+  },
+  actionMessage(){
+      return `${process.env.GRIDSOME_API_URL}/messages?username=${this.user.username}&email=${this.user.email}&desc=${this.user.desc}`
   }
 }
 </script>
